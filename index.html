@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VSCode Premium Features - Nebulaworks</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #1e1e1e;
+            color: #d4d4d4;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #252526;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #007acc;
+            border-bottom: 2px solid #007acc;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #4ec9b0;
+            margin-top: 30px;
+        }
+        h3 {
+            color: #dcdcaa;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        .highlight {
+            background-color: #0e639c;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 15px 0;
+        }
+        .code {
+            background-color: #1e1e1e;
+            padding: 10px;
+            border-radius: 4px;
+            font-family: 'Consolas', 'Monaco', monospace;
+            border-left: 4px solid #007acc;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .language-toggle {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .language-toggle button {
+            background-color: #007acc;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 0 5px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .language-toggle button.active {
+            background-color: #4ec9b0;
+        }
+        .lang-content {
+            display: none;
+        }
+        .lang-content.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>VSCode Premium Features Guide</h1>
+        
+        <div class="language-toggle">
+            <button onclick="showLanguage('id')" id="btn-id" class="active">Bahasa Indonesia</button>
+            <button onclick="showLanguage('en')" id="btn-en">English</button>
+        </div>
+
+        <!-- Indonesian Content -->
+        <div id="content-id" class="lang-content active">
+            <div class="highlight">
+                <h2>❓ Kenapa di VSCode Tidak Bisa Premium?</h2>
+                <p>Pertanyaan yang sering ditanyakan: bagaimana cara mengaktifkan fitur premium di Visual Studio Code?</p>
+            </div>
+
+            <div class="section">
+                <h3>🆓 VSCode Adalah GRATIS!</h3>
+                <p>Visual Studio Code adalah editor kode yang <strong>sepenuhnya gratis</strong> dan open source. Tidak ada versi "premium" dari VSCode itu sendiri.</p>
+            </div>
+
+            <div class="section">
+                <h3>💎 Apa yang Dimaksud "Premium"?</h3>
+                <p>Yang mungkin Anda maksud adalah:</p>
+                <ul>
+                    <li><strong>GitHub Copilot</strong> - AI coding assistant (berbayar)</li>
+                    <li><strong>Extensions Premium</strong> - Beberapa ekstensi pihak ketiga berbayar</li>
+                    <li><strong>Visual Studio Professional/Enterprise</strong> - IDE berbayar yang berbeda</li>
+                    <li><strong>Azure DevOps</strong> - Layanan cloud Microsoft</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h3>🚀 Cara Mengaktifkan GitHub Copilot</h3>
+                <div class="code">
+                    1. Buka VSCode<br>
+                    2. Pergi ke Extensions (Ctrl+Shift+X)<br>
+                    3. Cari "GitHub Copilot"<br>
+                    4. Install ekstensi tersebut<br>
+                    5. Sign in dengan akun GitHub yang memiliki langganan Copilot
+                </div>
+            </div>
+
+            <div class="section">
+                <h3>💰 Cara Berlangganan GitHub Copilot</h3>
+                <ul>
+                    <li>Kunjungi <a href="https://github.com/features/copilot" target="_blank">github.com/features/copilot</a></li>
+                    <li>Pilih paket Individual ($10/bulan) atau Business ($19/user/bulan)</li>
+                    <li>Dapatkan trial gratis 30 hari</li>
+                    <li>Gratis untuk siswa, guru, dan maintainer open source</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h3>🔧 Troubleshooting</h3>
+                <p>Jika GitHub Copilot tidak bekerja:</p>
+                <ul>
+                    <li>Pastikan Anda sudah login ke akun GitHub</li>
+                    <li>Cek status langganan di GitHub Settings</li>
+                    <li>Restart VSCode setelah install ekstensi</li>
+                    <li>Update VSCode ke versi terbaru</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- English Content -->
+        <div id="content-en" class="lang-content">
+            <div class="highlight">
+                <h2>❓ Why Can't I Access Premium Features in VSCode?</h2>
+                <p>A frequently asked question: how to enable premium features in Visual Studio Code?</p>
+            </div>
+
+            <div class="section">
+                <h3>🆓 VSCode is FREE!</h3>
+                <p>Visual Studio Code is a <strong>completely free</strong> and open source code editor. There is no "premium" version of VSCode itself.</p>
+            </div>
+
+            <div class="section">
+                <h3>💎 What "Premium" Might Mean</h3>
+                <p>You might be referring to:</p>
+                <ul>
+                    <li><strong>GitHub Copilot</strong> - AI coding assistant (paid)</li>
+                    <li><strong>Premium Extensions</strong> - Some third-party paid extensions</li>
+                    <li><strong>Visual Studio Professional/Enterprise</strong> - Different paid IDE</li>
+                    <li><strong>Azure DevOps</strong> - Microsoft cloud services</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h3>🚀 How to Enable GitHub Copilot</h3>
+                <div class="code">
+                    1. Open VSCode<br>
+                    2. Go to Extensions (Ctrl+Shift+X)<br>
+                    3. Search for "GitHub Copilot"<br>
+                    4. Install the extension<br>
+                    5. Sign in with a GitHub account that has Copilot subscription
+                </div>
+            </div>
+
+            <div class="section">
+                <h3>💰 How to Subscribe to GitHub Copilot</h3>
+                <ul>
+                    <li>Visit <a href="https://github.com/features/copilot" target="_blank">github.com/features/copilot</a></li>
+                    <li>Choose Individual plan ($10/month) or Business plan ($19/user/month)</li>
+                    <li>Get 30-day free trial</li>
+                    <li>Free for students, teachers, and open source maintainers</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h3>🔧 Troubleshooting</h3>
+                <p>If GitHub Copilot is not working:</p>
+                <ul>
+                    <li>Make sure you're logged into your GitHub account</li>
+                    <li>Check your subscription status in GitHub Settings</li>
+                    <li>Restart VSCode after installing extensions</li>
+                    <li>Update VSCode to the latest version</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section" style="text-align: center; margin-top: 50px; border-top: 1px solid #3c3c3c; padding-top: 20px;">
+            <p style="color: #858585;">
+                Created with ❤️ for the developer community<br>
+                <small>Hosted on <a href="https://nebulaworks.me" style="color: #007acc;">nebulaworks.me</a></small>
+            </p>
+        </div>
+    </div>
+
+    <script>
+        function showLanguage(lang) {
+            // Hide all content
+            document.querySelectorAll('.lang-content').forEach(content => {
+                content.classList.remove('active');
+            });
+            
+            // Remove active class from all buttons
+            document.querySelectorAll('.language-toggle button').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            
+            // Show selected content and activate button
+            document.getElementById('content-' + lang).classList.add('active');
+            document.getElementById('btn-' + lang).classList.add('active');
+        }
+    </script>
+</body>
+</html>
